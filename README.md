@@ -1,11 +1,11 @@
 # gnucash_general_journal
 * Extract a [General Journal](https://en.wikipedia.org/wiki/General_journal)
 * output a CSV file
-* one line per transaction, each debit and credit spread in columns
+* one line per transaction, each debit and credit spread to the columns
 * one column per account
 * account names are preppended with the currencey symbol
 
-One column per account, one line per transaction captures deatils of every transaction including all [splits](https://www.gnucash.org/docs/v3/C/gnucash-guide/txns-registers-txntypes.html) and allows for a third party not using GnuCash to have an overview of all transactions and account, and letting them work per account directly in a spreadsheet, for example calculating and account balance by doing a sum of that column.
+One column per account, one line per transaction captures deatils of every transaction including all [splits](https://www.gnucash.org/docs/v3/C/gnucash-guide/txns-registers-txntypes.html) and allows for a third party not using GnuCash to have an overview of all transactions and accounts, and work directly in a spreadsheet, for example calculating and account balance by doing a sum of that column.
 
 ## Example
 |Date|Description|CAD Big Bank|CAD GST collected|CAD GST Paid|CAD Revenue|CAD Prof dev|CAD openning balances|
