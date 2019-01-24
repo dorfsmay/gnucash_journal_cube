@@ -31,3 +31,8 @@ It prints the message "You need to install requests to use the 'yahoo' import". 
 
 ## Dependencies
 * [piecash](https://github.com/sdementen/piecash)
+
+## TODO
+* add simple sqlite3 file and simple tests
+* eliminate the Requests/yahoo warning
+

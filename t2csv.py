@@ -49,27 +49,6 @@ def write_csv(csv_file, rows, fieldnames):
         writer.writeheader()
         writer.writerows(rows)
 
-
-    # transaction #7 is a US => CAD transaction
-    # transaction #
-    # transactions has:
-    # currency
-    # description
-    # post_date
-    # splits LIST
-    #split members:
-    #  account = use account.name
-    #  value
-    #  lot
-    #  memo
-    #  on_book_add
-    #  quantity
-    #  slots
-    #  transaction
-    #  validate
-    #  value = amount/value of this split
-
-
 print('\n\n') # Because of the warning about importing request
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
