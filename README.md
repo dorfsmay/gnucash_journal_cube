@@ -16,11 +16,14 @@ The "one column per account, one line per transaction" model captures details of
 
 ## Install
 ```bash
+sudo pip3 virtualenv
 cd gnucash_general_journal
-python3 -m venv .
+virtualenv .
 . ./bin/activate
 pip3 install -r ./requirements.txt
 ```
+
+Note, [piecash](https://github.com/sdementen/piecash) is set at version 0.19.0 in order to work with GnuCash versions 2.x.
 
 ## Usage
     ./t2csv.py accounting-sqlite3.gnucash general_journal.csv
