@@ -23,7 +23,7 @@ def sort_extra_fields(rows, extra_fields):
 
 def transaction_to_list(gnucash_file):
     rows = list()
-    fields = ['Date', 'Description',]
+    fields = ['Date', 'Description', 'TRANSACTION AMOUNT', ]
     extra_fields = list()
     book = piecash.open_book(gnucash_file, readonly=True)
     debug.book = book ####
@@ -37,6 +37,10 @@ def transaction_to_list(gnucash_file):
             if account not in extra_fields:
                 extra_fields.append(account)
             r[account] = s.value
+            if 'TRANSACTION AMOUNT' not in r:
+                r['TRANSACTION AMOUNT'] = 0
+            if s.value >= 0:
+                r['TRANSACTION AMOUNT'] = r['TRANSACTION AMOUNT'] + s.value
         rows.append(r)
     rows.sort(key=lambda x: x['Date'])
     extra_fields = sort_extra_fields(rows, extra_fields)
