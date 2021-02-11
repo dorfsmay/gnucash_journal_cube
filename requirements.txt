@@ -1,1 +1,1 @@
-piecash==0.19.0
+piecash>=1.1.4
