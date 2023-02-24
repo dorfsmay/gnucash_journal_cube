@@ -1,4 +1,4 @@
-# gnucash_general_journal
+# gnucash journal cube
 * Extract a [General Journal](https://en.wikipedia.org/wiki/General_journal)
 * output a CSV file
 * **one line per transaction**, all debits and credits spread through columns
